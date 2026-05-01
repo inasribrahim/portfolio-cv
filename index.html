@@ -274,6 +274,8 @@
     .ob-br  { bottom:86px; right:10px;                          animation:badge-f  6s ease-in-out infinite 1.6s; }
     .ob-bl  { bottom:86px; left:10px;                           animation:badge-f  6s ease-in-out infinite 2.4s; }
     .ob-tl  { top:90px;   left:10px;                            animation:badge-f  6s ease-in-out infinite 3.2s; }
+    .ob-c3  { bottom:8px;  left:50%; transform:translateX(-50%); animation:badge-fc 6s ease-in-out infinite 4s; }
+    .ob-t5  { top:215px;   right:10px;                           animation:badge-f  6s ease-in-out infinite 4.8s; }
     @keyframes badge-f  { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
     @keyframes badge-fc { 0%,100%{transform:translateX(-50%) translateY(0);} 50%{transform:translateX(-50%) translateY(-8px);} }
     /* floating dots */
@@ -282,6 +284,8 @@
     .o-dot-2 { width:5px;  height:5px;  background:var(--purple); opacity:.45; top:66%; right:14%; animation-delay:1.5s; }
     .o-dot-3 { width:6px;  height:6px;  background:var(--teal);   opacity:.35; bottom:16%; left:18%; animation-delay:3s; }
     .o-dot-4 { width:4px;  height:4px;  background:var(--purple); opacity:.4;  top:28%; left:10%;  animation-delay:.7s; }
+    .o-dot-5 { width:7px;  height:7px;  background:var(--teal);   opacity:.4;  top:52%; left:8%;   animation-delay:2s; }
+    .o-dot-6 { width:5px;  height:5px;  background:var(--purple); opacity:.35; top:12%; right:20%; animation-delay:4s; }
     @keyframes dot-float { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-12px); } }
     .hero-scroll-hint {
       position:absolute; bottom:32px; left:50%; transform:translateX(-50%);
@@ -443,6 +447,7 @@
       .orb-ring-2 { width:345px; height:345px; }
       .orb-core { width:158px; height:158px; }
       .orb-monogram { font-size:44px; }
+      .ob-t5 { top:175px; }
       .projects-grid { grid-template-columns:repeat(2,1fr); }
     }
     @media (max-width:900px) {
@@ -460,6 +465,7 @@
       .orb-monogram { font-size:36px; }
       .ob-top { top:4px; } .ob-tr { top:46px; right:6px; } .ob-br { bottom:44px; right:6px; }
       .ob-bl { bottom:44px; left:6px; } .ob-tl { top:46px; left:6px; }
+      .ob-t5 { top:135px; right:6px; }
       .hero-scroll-hint { display:none; }
       .about-grid { grid-template-columns:1fr; gap:48px; }
       .tl-item { grid-template-columns:1fr; gap:10px; }
